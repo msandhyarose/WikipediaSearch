@@ -156,6 +156,7 @@
             _cnstrntImageHeight.constant = [[[dictData objectForKey:@"thumbnail"] objectForKey:@"height"] doubleValue];
         });
         
+        
        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),
                        ^{
                            NSString * imgURL = [[dictData objectForKey:@"thumbnail"] objectForKey:@"source"];
